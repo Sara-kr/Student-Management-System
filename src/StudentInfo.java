@@ -26,11 +26,10 @@ public class StudentInfo {
       for(Student student : students){
           if (student.getId()==id){
               System.out.println("Student found " + student);
-          }
-          else {
-              System.out.println("Not Found");
+              return;
           }
       }
+      System.out.println("Not Found!");
   }
   public void updateStudent(int id,String name,int age,String grade,String email){
       for (Student student : students){
